@@ -1,10 +1,12 @@
+name: Scheduled Workflow
+
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
       - name: Echo current time
-        run: Echo "The current server time is $(date)"     
+        run: echo "The current server time is $(date)"
